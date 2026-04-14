@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#app-container {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+#app-container.loaded {
+    opacity: 1;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app-header h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.calculator {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.display-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mode-indicator {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.expression {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 5px;
+    min-height: 1.5rem;
+    word-wrap: break-word;
+}
+
+.result {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #10181f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.key {
+    border: none;
+    border-radius: 10px;
+    padding: 15px 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.key.number {
+    background-color: #ffffff;
+    color: #10181f;
+}
+
+.key.operator {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+}
+
+.key.scientific {
+    background-color: #3e4e5b;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.key.action {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    grid-column: span 1;
+}
+
+@media (max-width: 400px) {
+    .key {
+        padding: 12px 5px;
+        font-size: 0.9rem;
+    }
+}

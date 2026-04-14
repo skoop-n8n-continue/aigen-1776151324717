@@ -1,0 +1,52 @@
+{
+  "app_id": "aigen-1776151324717",
+  "document_version": 1,
+  "sections": {
+    "app_settings": {
+      "primary_color": {
+        "type": "color",
+        "label": "Primary Color",
+        "value": "#00b7af"
+      },
+      "secondary_color": {
+        "type": "color",
+        "label": "Secondary Color",
+        "value": "#10181f"
+      },
+      "background_color": {
+        "type": "color",
+        "label": "Background Color",
+        "value": "#f4f7f6"
+      },
+      "text_color": {
+        "type": "color",
+        "label": "Text Color",
+        "value": "#10181f"
+      },
+      "button_text_color": {
+        "type": "color",
+        "label": "Button Text Color",
+        "value": "#ffffff"
+      },
+      "app_name": {
+        "type": "text",
+        "label": "App Name",
+        "value": "Skoop Scientific"
+      }
+    },
+    "calculator_config": {
+      "precision": {
+        "type": "number",
+        "label": "Display Precision",
+        "value": 10,
+        "meta": { "format": "integer" }
+      },
+      "default_angle_unit": {
+        "type": "enum",
+        "label": "Default Angle Unit",
+        "value": "deg",
+        "meta": { "options": ["deg", "rad"] }
+      }
+    }
+  }
+}
