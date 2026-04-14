@@ -38,14 +38,21 @@
       "precision": {
         "type": "number",
         "label": "Display Precision",
-        "value": 10,
-        "meta": { "format": "integer" }
+        "value": 1,
+        "meta": {
+          "format": "integer"
+        }
       },
       "default_angle_unit": {
         "type": "enum",
         "label": "Default Angle Unit",
         "value": "deg",
-        "meta": { "options": ["deg", "rad"] }
+        "meta": {
+          "options": [
+            "deg",
+            "rad"
+          ]
+        }
       }
     }
   }
