@@ -38,7 +38,7 @@
       "precision": {
         "type": "number",
         "label": "Display Precision",
-        "value": 1,
+        "value": 100,
         "meta": {
           "format": "integer"
         }
